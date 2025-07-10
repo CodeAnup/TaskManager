@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-900 text-white min-h-screen flex flex-col items-center px-4 py-10">
+
+  <!-- Back Link -->
+  <div class="w-full max-w-4xl mb-6 text-left">
+    <a href="/" class="inline-block text-indigo-400 hover:text-indigo-300 transition font-medium text-sm">
+      ← Back to Home
+    </a>
+  </div>
+
+  <!-- Task Display Card -->
+  <div class="w-full max-w-4xl bg-zinc-800 p-8 rounded-2xl shadow-2xl transition-all duration-300">
+    <!-- Filename Title -->
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4 border-b border-zinc-700 pb-2 ">
+      🗂️ <%= filename %>
+    </h1>
+
+    <!-- File Content -->
+    <pre class="whitespace-pre-wrap break-words text-zinc-300 text-base leading-relaxed font-light">
+<%= filedata %>
+    </pre>
+  </div>
+
+</body>
+
+</html>
